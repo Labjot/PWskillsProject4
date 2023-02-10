@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* Properites to be applied in case width is greater than 1400px */
+.container{
+    background-color: #75e6e0;
+    height: 100vh;
+
+}
+.text{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 40px;
+    font-weight: 800;
+}
+.frame2{
+    display: none;
+}
+.frame3{
+    display: none;
+}
+.frame4{
+    display: none;
+}
+.frame5{
+    display: none;
+}
+/* For large laptops having width less than or equal to 1400px */
+@media screen and (max-width:1400px) {
+    .container{
+        background-color: #13a71f;
+    }
+    .frame2{
+        display: block;
+        text-align: center;
+        margin-top:20px; 
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+/* For laptops having width less than or equal to 1024px  */
+@media screen and (max-width:1024px) {
+    .container{
+        background-color: #fac125;
+    }
+    .frame2{
+        display: none;
+    }
+    .frame3{
+        display: block;
+        text-align: center;
+        margin-top:20px; 
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+/* For tablets having width less than or equal to 768px */
+@media screen and (max-width:768px){
+    .container{
+        background-color: #04f9f1;
+    }
+    .frame2{
+        display: none;
+    }
+    .frame3{
+        display: none;
+    }
+    .frame4{
+        display: block;
+        text-align: center;
+        margin-top:20px; 
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+/* For mobile phones with width less than  or equal to 425px */
+@media screen and (max-width:425px){
+    .container{
+        background-color: #da2626;
+    }
+    .frame2{
+        display: none;
+    }
+    .frame3{
+        display: none;
+    }
+    .frame4{
+        display: none;
+    }
+    .frame5{
+        display: block;
+        text-align: center;
+        margin-top:20px; 
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
